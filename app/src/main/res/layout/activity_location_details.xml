@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".locationDetails"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="NAME"
+            android:fontFamily="@font/revans_medium"
+            android:textSize="24dp"
+            android:textColor="@color/white"/>
+
+        <!--android:src="@color/cardview_dark_background"-->
+        <ImageView
+            android:id="@+id/imageThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/buttonFavourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="match_parent"
+            android:background="#50000000">
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:fontFamily="@font/revans_medium"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
